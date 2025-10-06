@@ -7,7 +7,7 @@ spark = SparkSession.builder \
     .getOrCreate()
 
 # Step 2: Read CSV file
-df = spark.read.csv("employee.csv", header=True, inferSchema=True)
+df = spark.read.csv("dbfss://data/employee.csv", header=True, inferSchema=True)
 
 # Step 3: Initial inspection
 df.printSchema()
@@ -28,3 +28,4 @@ cleaned_df.show()
 
 # setp 6: Display
 display(cleaned_df)
+
