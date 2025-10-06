@@ -25,3 +25,6 @@ cleaned_df = df \
 
 # Step 5: Show cleaned data
 cleaned_df.show()
+
+# setp 6: Display
+display(cleaned_df)
