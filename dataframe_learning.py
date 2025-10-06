@@ -11,7 +11,8 @@ data = [
     (3, "Charlie", 31, "C"),
     (4, "David", 22, "B"),
     (5, "Eva", 25, "A"),
-    (6, "Frank", None, "C")
+    (6, "Frank", None, "C"),
+    (7, "Rama", 22, "C")
 ]
 
 # Create DataFrame
