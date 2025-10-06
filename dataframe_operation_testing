@@ -21,6 +21,8 @@ object DataFrameOperationsTest {
     )
 
     val df = data.toDF("id", "name", "age", "grade")
+    println("Schema")
+    display(df)
 
     // Show original data
     println("Original DataFrame:")
