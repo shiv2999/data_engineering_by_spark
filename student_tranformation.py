@@ -8,7 +8,8 @@ spark = SparkSession.builder \
 
 # Step 2: Read student data from CSV
 # Assuming the file has columns: student_id, name, age, grade
-df = spark.read.csv("dbfss://data/students.csv", header=True, inferSchema=True)
+file_path = "dbfss://data/students.csv"
+df = spark.read.csv(file_path, header=True, inferSchema=True)
 
 # Step 3: Basic transformations
 # - Convert names to uppercase
@@ -21,4 +22,5 @@ transformed_df.show()
 
 # Optional: Save transformed data
 # transformed_df.write.csv("transformed_students.csv", header=True)
+
 
