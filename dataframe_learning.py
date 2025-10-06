@@ -29,6 +29,8 @@ df.withColumnRenamed("grade", "class_grade").show()
 # Filter Rows
 df.filter(col("age") > 25).show()
 df.filter(col("grade") == "A").show()
+df.filter(col("grade") == "B").show()
+df.filter(col("grade") == "C").show()
 
 # Add New Column
 df.withColumn("age_plus_10", col("age") + 10).show()
